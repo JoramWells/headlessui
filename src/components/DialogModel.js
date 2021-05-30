@@ -1,8 +1,9 @@
 import { Dialog, Transition } from '@headlessui/react'
+import { ExternalLinkIcon } from '@heroicons/react/solid'
 import { Fragment, useState } from 'react'
 
 export default function DialogModal() {
-  let [isOpen, setIsOpen] = useState(true)
+  let [isOpen, setIsOpen] = useState(false)
 
   function closeModal() {
     setIsOpen(false)
@@ -14,7 +15,11 @@ export default function DialogModal() {
 
   return (
     <>
-      <div className="fixed inset-0 flex items-center justify-center">
+      <div className=" inset-0 flex items-center justify-center">
+          <ExternalLinkIcon
+          className="h-5"
+          onClick={openModal}
+          />
         <button
           type="button"
           onClick={openModal}

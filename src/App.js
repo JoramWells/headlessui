@@ -1,13 +1,12 @@
-import './App.css';
-import DialogModal from './components/DialogModel';
-import HeadTag from './components/HeadTag'
+import "./App.css";
+import DialogModal from "./components/DialogModel";
+import HeadTag from "./components/HeadTag";
 
 function App() {
   return (
     <>
-    <HeadTag/>
-    <DialogModal/>
-
+      <HeadTag />
+      <DialogModal />
     </>
   );
 }
